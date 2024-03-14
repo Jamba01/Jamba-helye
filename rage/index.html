@@ -13,7 +13,7 @@
 
     <script>
         function chooseShape() {
-            var randomNumber = Math.floor(Math.random() * 5);
+            var randomNumber = Math.floor(Math.random() * 11);
             var result;
             switch (randomNumber) {
                 case 0:
@@ -34,11 +34,20 @@
                  case    5:
                     result = 'Fonj egy szart!!!';
                     break;    
-                case 6:
+                case     6:
                     result = 'Szopj le egy niggert majd nyelj le egy kanalat!';
                     break;
-                case 7:
+                case     7:
                     result = 'Fejj meg egy tehenet!';
+                    break;
+                case     8:
+                    result = 'Nyomj fel egy gerendát!!!';
+                    break;
+                case     9:
+                    result = 'Verd le az ernyőt!!!';
+                    break;
+                case     10:
+                    result = 'Kalapáld el magad!!!!';
                     break;
             }
             document.getElementById('result').innerText = result;
