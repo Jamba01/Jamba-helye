@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Na melyik???</title>
+</head>
+<body>
+    <h1>Hogyan ragelj??</h1>
+    <button class="button" onclick="chooseShape()"><span></span>Nyomd meg!</button>
+    <div id="result"></div>
+
+    <script>
+        function chooseShape() {
+            var randomNumber = Math.floor(Math.random() * 5);
+            var result;
+            switch (randomNumber) {
+                case 0:
+                    result = 'Rúgd faszba magad!!!';
+                    break;
+                case 1:
+                    result = 'Vágd nyakon az anyád!!!';
+                    break;
+                case 2:
+                    result = 'Áss egy lyukat!!!';
+                    break;
+                case     3:    
+                    result = 'Telepedj le az alföldön!';
+                    break;
+                 case    4:
+                    result = 'Menj el gereblyézni!';
+                    break;
+                 case    5:
+                    result = 'Fonj egy szart!!!';
+                    break;    
+                case 6:
+                    result = 'Szopj le egy niggert majd nyelj le egy kanalat!';
+                    break;
+                case 7:
+                    result = 'Fejj meg egy tehenet!';
+                    break;
+            }
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>
