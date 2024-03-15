@@ -121,4 +121,16 @@ button:hover{
 .li{
      font-size: 200%;
 
-}
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 400px;
+        height: auto;
+        margin: 0 20px;
+    }
