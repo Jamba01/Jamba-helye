@@ -22,7 +22,7 @@ h2{
 }
 
 .navbar{
-    width: 85%;
+    width: 95%;
     margin: auto;
     padding: 35px 0;
     display: flex;
@@ -123,13 +123,13 @@ button:hover{
 
     }
 
-    .image-container {
+.image-container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .image-container img {
+.image-container img {
         width: 400px;
         height: auto;
         margin: 0 20px;

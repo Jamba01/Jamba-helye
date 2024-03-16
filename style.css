@@ -18,11 +18,10 @@ h2{
     background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pic/wallp.jpg);
     background-size: cover;
     background-position: center;
-    text-decoration: underline;
 }
 
 .navbar{
-    width: 85%;
+    width: 95%;
     margin: auto;
     padding: 35px 0;
     display: flex;
