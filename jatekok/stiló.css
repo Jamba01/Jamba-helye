@@ -134,3 +134,11 @@ button:hover{
         height: auto;
         margin: 0 20px;
     }
+
+    footer {
+        text-align: center;
+        padding: 5px;
+        background-color: #000;
+        color: #ffffff;
+        font-weight: bold;
+      }
