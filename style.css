@@ -30,14 +30,15 @@ h2{
 }
 
 .logo{
-    height: 200px;
-    width: 700px;
     cursor: pointer;
 }
 
-.navbar ul li{
+.navbar ul{
     list-style: none;
-    display: inline-block;
+    display: flex;
+}
+
+.navbar ul li{
     margin: 0 20px;
     position: relative;
 }
@@ -115,4 +116,10 @@ button:hover span{
 
 button:hover{
     border: none;
+}
+
+.responsive{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
