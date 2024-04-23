@@ -18,7 +18,6 @@ h2{
     background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(imgs/back3.jpg);
     background-size: cover;
     background-position: center;
-    text-decoration: underline;
 }
 
 .navbar{
@@ -30,6 +29,11 @@ h2{
     justify-content: space-between;
 }
 
+.navbar ul{
+    list-style: none;
+    display: flex;
+    }
+
 .logo{
     height: 200px;
     width: 700px;
@@ -37,8 +41,6 @@ h2{
 }
 
 .navbar ul li{
-    list-style: none;
-    display: inline-block;
     margin: 0 20px;
     position: relative;
 }
@@ -118,41 +120,24 @@ button:hover{
     border: none;
 }
 
-.li{
-     font-size: 200%;
-
-    }
-
-.image-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-.image-container img {
-        width: 400px;
-        height: auto;
-        margin: 0 20px;
-    }
 
 .footer {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color: rgba(0, 0, 0, 0.1);
-        color: #fff;
-        padding: 20px;
-        position: fixed;
-        bottom: 0;
-        font-size: 120%;
-        width: 100%;
-        text-align: center;
-        text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    font-size: 120%;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
         }
 
 .responsive{
-            width: 100%;
-            max-width: 400px;
-            height: auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 
-        }
+}
         
