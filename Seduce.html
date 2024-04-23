@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamba története</title>
+<style>
+    .letter {
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+<script>
+async function delayed_print(text) {
+    for (let char of text) {
+        document.write(`<span class="letter">${char}</span>`);
+        await sleep(100); // 100ms várakozás
+    }
+    document.write('<br><br>'); // Hely hagyása a szöveg alatt
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function main() {
+    await delayed_print("A feladatod az, hogy elcsábítsd Jambát!");
+    await delayed_print("A történet:");
+    await delayed_print("...");
+    await delayed_print("Egy nap megláttad őt a kondiban és erőt vettél magadon és megközelítetted.");
+    await delayed_print("Ezt fogod neki mondani:");
+    await delayed_print("1. Úúú Jamba már rád vágyom mióta világ a világ... Sokkal jobb vagy mint a Kuma (1)");
+    await delayed_print("2. Jamba a Kuma sokkal szexibb nálad és te soha nem leszel az ő szintjén. (2)");
+    await delayed_print("3. Mégsem mész oda (3)");
+
+    let choice = prompt("Választásod: ");
+
+    if (choice === "1") {
+        await delayed_print("Jamba elpirult, megfogta a kezed és bevitt téged a WC-be!");
+        await delayed_print("A WC-ben levette a gatyáját és kegyelem nélkül elkezdett téged döngetni!");
+        await delayed_print("Eközben te csak arra gondoltál, hogy milyen szerencsés vagy.");
+    } else if (choice === "2") {
+        await delayed_print("Jamba erre nem számított.");
+        await delayed_print("Azt mondta neked hogy nagyon nagyot fogsz csalódni az életben ha ilyen téves információkban hiszel.");
+        await delayed_print("Utánna elővett a semmiből egy szíjat és addig csapott vele míg azt nem mondtad, hogy JAMBA AZ ÚR");
+    } else if (choice === "3") {
+        await delayed_print("Nem lesz ez így jó");
+        return;
+    } else {
+        await delayed_print("Hibás választás. Kérlek, válassz egy érvényes lehetőséget.");
+    }
+
+    while (true) {
+        await delayed_print("\nUtánna mit fogsz tenni?:");
+        await delayed_print("1. Megpróbálod legközelebb is (1)");
+        await delayed_print("2. Megelégszel azzal amit kaptál (2)");
+
+        let next_choice = prompt("Választásod: ");
+
+        if (next_choice === "1") {
+            await delayed_print("Jamba másodjára még kegyetlenebb lesz.");
+        } else if (next_choice === "2") {
+            await delayed_print("Folytatás hamarosan...");
+        } else {
+            await delayed_print("Valami nem jó gec");
+        }
+    }
+}
+
+main();
+</script>
+</body>
+</html>
