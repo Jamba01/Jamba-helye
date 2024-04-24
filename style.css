@@ -4,6 +4,12 @@
     font-family: sans-serif;
 }
 
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pic/back3.jpg);
+    background-size: cover;
+    background-position: auto;
+}
+
 h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -15,9 +21,18 @@ h2{
 .banner{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pic/back3.jpg);
-    background-size: cover;
-    background-position: center;
+}
+
+.also{
+    position: relative;
+    float: right;
+    margin-top: 650px;
+}
+
+.also2{
+    position: relative;
+    float: left;
+    margin-top: 650px;
 }
 
 .navbar{
@@ -98,6 +113,33 @@ button{
     position: relative;
     overflow: hidden;
 }
+
+.button2{
+    width: 200px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 200px 60px;
+    color: white;
+    font-size: 25px;
+  }
+
+  .button2:hover{
+    background-image: url(pic/Gay_Pride_Flag.svg.png);
+  }
+
+  .button2:hover span{
+    width: 100%;
+}
+
+  .button3{
+    width: 200px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 200px 60px;
+    color: white;
+    font-size: 25px;
+  }
+
 span{
     background: rgb(0, 0, 0);
     height: 100%;
