@@ -15,9 +15,9 @@
 async function delayed_print(text) {
     for (let char of text) {
         document.write(`<span class="letter">${char}</span>`);
-        await sleep(100); // 100ms várakozás
+        await sleep(100); 
     }
-    document.write('<br><br>'); // Hely hagyása a szöveg alatt
+    document.write('<br><br>'); 
 }
 
 function sleep(ms) {
@@ -25,7 +25,7 @@ function sleep(ms) {
 }
 
 async function main() {
-    await delayed_print("A feladatod az, hogy elcsábítsd Jambát!");
+    await delayed_print("A Feladatod az, hogy elcsábítsd Jambát!");
     await delayed_print("A történet:");
     await delayed_print("...");
     await delayed_print("Egy nap megláttad őt a kondiban és erőt vettél magadon és megközelítetted.");
@@ -45,27 +45,37 @@ async function main() {
         await delayed_print("Azt mondta neked hogy nagyon nagyot fogsz csalódni az életben ha ilyen téves információkban hiszel.");
         await delayed_print("Utánna elővett a semmiből egy szíjat és addig csapott vele míg azt nem mondtad, hogy JAMBA AZ ÚR");
     } else if (choice === "3") {
-        await delayed_print("Nem lesz ez így jó");
-        return;
+        await delayed_print("Jambával utánna sem sexeltél");
     } else {
-        await delayed_print("Hibás választás. Kérlek, válassz egy érvényes lehetőséget.");
+        await delayed_print("Valami nem jó gec");
     }
 
-    while (true) {
+    let continueAsking = true;
+
+    while (continueAsking) {
         await delayed_print("\nUtánna mit fogsz tenni?:");
-        await delayed_print("1. Megpróbálod legközelebb is (1)");
-        await delayed_print("2. Megelégszel azzal amit kaptál (2)");
+        await delayed_print("1. Megpróbálod újra (1)");
+        await delayed_print("2. Megelégszel azzal ami van (2)");
 
-        let next_choice = prompt("Választásod: ");
+        let choice = prompt("Választásod: ");
 
-        if (next_choice === "1") {
-            await delayed_print("Jamba másodjára még kegyetlenebb lesz.");
-        } else if (next_choice === "2") {
+        if (choice === "1") {
+            await delayed_print("Jambának legközelebb nem áll fel a fasza.");
+            await delayed_print("Folytatás hamarosan...");
+        } else if (choice === "2") {
+            await delayed_print("Jamba a későbbiekben nem mutatott szexuális vonzalmat feléd.");
             await delayed_print("Folytatás hamarosan...");
         } else {
             await delayed_print("Valami nem jó gec");
         }
-    }
+
+        
+        if (choice !== "1" && choice !== "2") {
+            continueAsking = true;
+        } else {
+            continueAsking = false;
+        }
+    } 
 }
 
 main();
