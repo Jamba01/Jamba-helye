@@ -4,6 +4,12 @@
     font-family: sans-serif;
 }
 
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(imgs/back3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -15,9 +21,16 @@ h2{
 .banner{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(imgs/back3.jpg);
-    background-size: cover;
-    background-position: center;
+}
+
+#image-sett{
+    width: 400px;
+    margin-right: 15px;
+}
+
+#image-sett2{
+    width: 400px;
+    margin-left: 15px;
 }
 
 .navbar{
@@ -35,8 +48,9 @@ h2{
     }
 
 .logo{
-    height: 200px;
-    width: 700px;
+    height: 250px;
+    width: 450px;
+    margin-top: 35px;
     cursor: pointer;
 }
 
