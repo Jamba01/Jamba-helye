@@ -1,7 +1,7 @@
 .aside1{
-   float: left;
-   position: relative;
-   margin-top: 200px;
+   position: absolute;
+   top: 200px;
+   left: 60px;
 }
 
 #kep1{
@@ -9,11 +9,35 @@
 }
 
 .aside2{
-    float: right;
-    position: relative;
-    margin-top: 200px;
+    position: absolute;
+    top: 200px;
+    left: 1470px;
  }
  
  #kep2{
      transform: rotate(270deg);
+ }
+
+ h1{
+    position: absolute;
+    top: 150px;
+    left: 660px;
+    font-size: 60px;
+ }
+
+ p{
+    position: absolute;
+    top: 240px;
+    left: 730px;
+    font-size: 40px;
+ }
+
+ body{
+    background-color: rgb(236, 93, 189);
+ }
+
+ #feri{
+    position: absolute;
+    top: 400px;
+    left: 770px;
  }
