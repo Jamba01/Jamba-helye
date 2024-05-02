@@ -1,0 +1,19 @@
+.aside1{
+   float: left;
+   position: relative;
+   margin-top: 200px;
+}
+
+#kep1{
+    transform: rotate(90deg);
+}
+
+.aside2{
+    float: right;
+    position: relative;
+    margin-top: 200px;
+ }
+ 
+ #kep2{
+     transform: rotate(270deg);
+ }
