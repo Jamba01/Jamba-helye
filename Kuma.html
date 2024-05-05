@@ -6,16 +6,67 @@
     <link rel="stylesheet" href="kuma.css">
     <title>Kuma tudnivalók</title>
 </head>
+<style>
+    .aside1{
+       position: absolute;
+       top: 30%; /* Relatív pozíció az oldal magasságához */
+       left: 5%; /* Relatív pozíció az oldal szélességéhez */
+    }
+
+    #kep1{
+        transform: rotate(90deg);
+        max-width: 25%; /* A kép maximális szélessége az oldal szélességének 40%-a */
+        height: auto; /* Automatikus magasság beállítás a szélességhez képest */
+    }
+
+    .aside2{
+        position: absolute;
+        top: 30%; /* Relatív pozíció az oldal magasságához */
+        left: 80%; /* Relatív pozíció az oldal szélességéhez */
+    }
+ 
+    #kep2{
+        transform: rotate(270deg);
+        max-width: 40%; /* A kép maximális szélessége az oldal szélességének 40%-a */
+        height: auto; /* Automatikus magasság beállítás a szélességhez képest */
+    }
+
+    h1{
+        position: absolute;
+        top: 7%; /* Relatív pozíció az oldal magasságához */
+        left: 30%; /* Relatív pozíció az oldal szélességéhez */
+        font-size: 4vw; /* Relatív betűméret az oldal szélességéhez */
+    }
+
+    p{
+        position: absolute;
+        top: 25%; /* Relatív pozíció az oldal magasságához */
+        left: 37%; /* Relatív pozíció az oldal szélességéhez */
+        font-size: 2vw; /* Relatív betűméret az oldal szélességéhez */
+    }
+
+    body{
+        background-color: rgb(236, 93, 189);
+    }
+
+    #feri{
+        position: absolute;
+        top: 40%; /* Relatív pozíció az oldal magasságához */
+        left: 42.5%; /* Relatív pozíció az oldal szélességéhez */
+        max-width: 15%; /* A kép maximális szélessége az oldal szélességének 15%-a */
+        height: auto; /* Automatikus magasság beállítás a szélességhez képest */
+    }
+</style>
 <body>
     <div class="aside1">
-       <img src="pic/Gay_Pride_Flag.svg.png" id="kep1" width="400" height="300">
+       <img src="pic/Gay_Pride_Flag.svg.png" id="kep1">
     </div>
     <h1>Kumának bajai vannak.</h1>
     <p>Nem szabad bizni kumában.</p>
     <div class="aside2">
-        <img src="pic/Gay_Pride_Flag.svg.png" id="kep2" width="400" height="300">
+        <img src="pic/Gay_Pride_Flag.svg.png" id="kep2">
     </div>
-    <img src="pic/feri.gif" alt="" width="400" height="400" id="feri">
+    <img src="pic/feri.gif" alt="" id="feri">
 
 
 </body>
